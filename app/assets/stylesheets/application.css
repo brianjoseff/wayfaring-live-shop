@@ -1,0 +1,62 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require imports
+ *= require shopify_app_buttons
+ *= require shopify_app
+ *=require_tree .
+*/
+
+
+body.normal { 
+  background: url('ringleader.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+input[type="text"]{
+   height: 45px;
+   font-size: 150%;
+   line-height: 45px;
+}
+	
+input[type="password"]{
+	height: 45px;
+	font-size: 150%;
+}
+
+.bold{
+	text-weight: bold;
+}
+
+.opaque-body{
+
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #000 !important;
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	/*Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	
+	/*box-shadow: 0 0 100px 100px #fff;*/
+}
+
+
+.opaque-body p, h1, h2, h3, h4, h5, h6, label {
+		color: #fff !important;
+}
+.opaque-body a{
+	color: #c20002;
+	text-decoration: underline;
+}
+.opaque-body a:hover{
+	color: #fff18b;
+	text-decoration: underline;
+}
